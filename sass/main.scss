@@ -1,0 +1,92 @@
+$maincolor: rgb(35, 49, 96);
+$mainfont: Asap, sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+
+  body{
+    background-color: $maincolor;
+    color: white;
+    font-family: $mainfont;
+  }
+
+  header{
+    background-color: white;
+    padding: 20px;
+    h1{
+      text-align: center;
+      color: $maincolor;
+    }
+  }
+  .score-board{
+    border: 3px solid white;
+    border-radius: 4px;
+    font-size: 50px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    position: relative;
+    text-align: center;
+    width: 30%;
+    .badge{
+      background-color: orange;
+      border-radius: 4px;
+      font-size: 18px;
+      padding: 5px;
+    }
+    #user-label{
+      position: absolute;
+      top: 30px;
+      left: -30px;
+    }
+    #comp-label{
+      position: absolute;
+      top: 30px;
+      right: -30px;
+    }
+  }
+  .result{
+    font-size: 40px;
+    p{
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  .choices{
+    margin: 50px 0;
+    text-align: center;
+    .choice{
+      border: 6px solid white;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 10px;
+      padding: 12px;
+      transition: all 0.5s ease;
+      img{
+        border-radius: 50%;
+      }
+    }
+    .choice:hover{
+      border-color: orange;
+      cursor: pointer;
+    }
+  }
+  #action-message{
+    color: white;
+    font-family: $mainfont;
+    font-size: 20px;
+    text-align: center;
+  }
+  .green-glow{
+    border-color:  green !important;
+    box-shadow: 0 0 10px darken(green, 20%);
+  }
+  .red-glow{
+    border-color: red !important;
+    box-shadow: 0 0 10px darken(red, 20%);
+  }
+  .gray-glow{
+    border-color: gray !important;
+    box-shadow: 0 0 10px darken(gray, 20%);
+  }
+}
