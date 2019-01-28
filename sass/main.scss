@@ -1,10 +1,9 @@
 $maincolor: rgb(35, 49, 96);
 $mainfont: Asap, sans-serif;
 *{
+  box-sizing:border-box;
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
-
   body{
     background-color: $maincolor;
     color: white;
@@ -15,8 +14,8 @@ $mainfont: Asap, sans-serif;
     background-color: white;
     padding: 20px;
     h1{
-      text-align: center;
       color: $maincolor;
+      text-align: center;
     }
   }
   .score-board{
@@ -35,14 +34,14 @@ $mainfont: Asap, sans-serif;
       padding: 5px;
     }
     #user-label{
+      left: -30px;
       position: absolute;
       top: 30px;
-      left: -30px;
     }
     #comp-label{
       position: absolute;
-      top: 30px;
       right: -30px;
+      top: 30px;
     }
   }
   .result{
@@ -74,7 +73,8 @@ $mainfont: Asap, sans-serif;
   #action-message{
     color: white;
     font-family: $mainfont;
-    font-size: 20px;
+    font-size: 32px;
+    font-weight: 100;
     text-align: center;
   }
   .green-glow{
@@ -88,5 +88,8 @@ $mainfont: Asap, sans-serif;
   .gray-glow{
     border-color: gray !important;
     box-shadow: 0 0 10px darken(gray, 20%);
+  }
+  #resetBTN{
+    margin: 10px auto;
   }
 }
